@@ -29,7 +29,7 @@ export const logIn = async (req, res) => {
         firstName: existingUser.firstName
       }
     }
-    //Kako je kod stvar testa tako sam ostavio generisanje tokena i ako ga ne koristim, nego samo kao drugo resenje za sutorizaciju.
+    //Kako je kod stvar testa tako sam ostavio generisanje tokena i ako ga ne koristim, nego samo kao drugo resenje za autorizaciju.
     jwt.sign(
       payload,
       process.env.JWT_SECRET,
