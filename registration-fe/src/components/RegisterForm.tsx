@@ -35,7 +35,7 @@ const RegisterForm = () => {
   const [user, setUser] = useLocalStorage("user", null)
   const [first, setfirst] = useState<boolean>(false);
   const navigate = useNavigate();
-  //Nisma bio siuran da li se korisnik pozdravlja samo jednom kada se loguje/regisruje ili mora uvek. Kako je u pitanju test zadatak ostavio sam ovaj kod.
+  //Nisma bio siguran da li se korisnik pozdravlja samo jednom kada se loguje/regisruje ili mora uvek. Kako je u pitanju test zadatak ostavio sam ovaj kod.
   const { setUsername } = useContext(UserContext); 
 
   const handleRegistration = async (values: RegisterValues) => {
