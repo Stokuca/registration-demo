@@ -35,7 +35,7 @@ const RegisterForm = () => {
   const [user, setUser] = useLocalStorage("user", null)
   const [first, setfirst] = useState<boolean>(false);
   const navigate = useNavigate();
-  //Kako je u pitanju test zadatak, slicna stvar kao sa tokenom, ostavio sam kao drugo resenje za prenos podataka konkretno imena u komponentu home.
+  //Nisma bio siuran da li se korisnik pozdravlja samo jednom kada se loguje/regisruje ili mora uvek. Kako je u pitanju test zadatak ostavio sam ovaj kod.
   const { setUsername } = useContext(UserContext); 
 
   const handleRegistration = async (values: RegisterValues) => {
